@@ -38,6 +38,7 @@ a:hover {
     position: fixed;
     text-align: center;
     z-index: 1;
+    border-bottom: 5px solid rgb(138, 159, 228);
 }
 
 .nav {
