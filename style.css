@@ -11,9 +11,20 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(61, 63, 73);
     font-family: sans-serif;
     background: rgb(233, 236, 243);
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(138, 159, 228);
 }
 
 /* Navigation Bar */
@@ -43,17 +54,13 @@ body {
     padding: 5px 10px 10px 10px;
 }
 
-.nav li:hover {
-    color: rgb(1, 255, 255)
-}
-
 .nav .name {
     display: block;
     margin-right: auto;
     color: white;
 }
 
-
+/* Header */
 
 header {
     text-align: center;
@@ -64,20 +71,25 @@ header {
     background-size: cover;
 }
 
+.intro {
+    padding-bottom: 310px;
+}
 
 /* Main Body */
 
 .bio-container {
     display: flex;
-    max-width: 900px;
+    max-width: 1200px;
     justify-content: space-around;
     margin: 0 auto;
     border-radius: 8px;
     padding-top: 60px;
+    
 }
 
 .bio {
-    background: white;
+    background: rgb(138, 159, 228);
+    color: white;
     opacity: .9;
     border-radius: 10px;
 }
@@ -106,4 +118,8 @@ header {
     box-shadow: 10px 10px rgb(138, 159, 228);
     transition: all .5s;
     transform: scale(1.15);
+}
+
+.contact-container {
+    padding-top: 50px;
 }
