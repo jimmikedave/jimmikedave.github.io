@@ -1,0 +1,109 @@
+/* Global Layout */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    background: rgb(233, 236, 243);
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    width: 100%;
+    background: rgb(30, 31, 36);
+    color: white;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700; 
+    list-style-type: none; 
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1300px;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav li:hover {
+    color: rgb(1, 255, 255)
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+
+
+
+header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 270px;
+    background: url('images/pexels-photo-416779_2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+
+/* Main Body */
+
+.bio-container {
+    display: flex;
+    max-width: 900px;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding-top: 60px;
+}
+
+.bio {
+    background: white;
+    opacity: .9;
+    border-radius: 10px;
+}
+
+.project-container {
+    padding-top: 80px;
+}
+
+.project-card {
+    display: flex;
+    max-width: 900px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.project-bio {
+    background: white;
+    opacity: .9;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(74, 76, 83);
+    padding: 15px;
+}
+
+.project-bio:hover{
+    box-shadow: 10px 10px rgb(138, 159, 228);
+    transition: all .5s;
+    transform: scale(1.15);
+}
