@@ -38,7 +38,7 @@ a:hover {
     position: fixed;
     text-align: center;
     z-index: 1;
-    border-bottom: 5px solid rgb(138, 159, 228);
+    border-bottom: 7px solid rgb(138, 159, 228);
 }
 
 .nav {
@@ -91,7 +91,6 @@ header {
 .bio {
     background: rgb(138, 159, 228);
     color: white;
-    opacity: .9;
     border-radius: 10px;
 }
 
