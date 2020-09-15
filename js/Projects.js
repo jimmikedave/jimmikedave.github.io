@@ -23,7 +23,7 @@ class Projects {
                 "githubLink": "https://github.com/jimmikedave/SQL-Library-Manager"
             },
             {
-                "projectName": "React App",
+                "projectName": "React Gallery App",
                 "description": "Image gallery app that is built with a modern single page applications to keep it fast, modular, and in sync with current web development trends. Axios is used to fetch data from the Flickr API, so that the images can be used to display.",
                 "technologies": ["React", " JSX", " Flickr API", " JavaScript" ],
                 "liveLink": [],
