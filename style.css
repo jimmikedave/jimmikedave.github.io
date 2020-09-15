@@ -61,6 +61,11 @@ a:hover {
     color: white;
 }
 
+.name:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
 /* Header */
 
 header {
