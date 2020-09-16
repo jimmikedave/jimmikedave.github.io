@@ -45,7 +45,7 @@ class Projects {
             },
             {
                 "projectName": "OOP Typing Game",
-                "description": "Browser-based typing game. This game is created with JavaScript and OOP (Object-Oriented Programming). The player type the random phase selected without making any errors and must complete the phrase presented before a timer runs out. Survive as many rounds as you can!",
+                "description": "Browser-based typing game. This game is created with JavaScript and OOP (Object-Oriented Programming). The player types the random phase selected without making any errors and must complete the phrase presented before a timer runs out. Survive as many rounds as you can!",
                 "technologies": ["JavaScript", " HTML", " CSS"],
                 "liveLink": ["https://jimmikedave.github.io/Type-For-Your-Life/"],
                 "githubLink": "https://github.com/jimmikedave/Type-For-Your-Life"
