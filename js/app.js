@@ -13,6 +13,7 @@ for(i=0; i<project.length; i++) {
             <h1>${project[i].projectName}</h1>
             <h3>Technologies: ${project[i].technologies}</h3> 
             <p>${project[i].description}</p>
+            <h4>Links</h4>
             <a href='${project[i].githubLink}' target='_blank'><img src='images/github.svg'></a>
             <a href='${project[i].liveLink[0]}' target='_blank'><img src='images/link.svg'></a>
         </div>`;
@@ -26,6 +27,7 @@ for(i=0; i<project.length; i++) {
             <h1>${project[i].projectName}</h1>
             <h3>Technologies: ${project[i].technologies}</h3> 
             <p>${project[i].description}</p>
+            <h4>Links</h4>
             <a href='${project[i].githubLink}' target='_blank'><img src='images/github.svg'></a>
         </div>`;
 
