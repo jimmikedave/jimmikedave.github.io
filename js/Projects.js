@@ -17,7 +17,7 @@ class Projects {
             },
             {
                 "projectName": "SQL Library Manager",
-                "description": "This dynamic web application manages a SQLite database for a fictional library. The application displays the itesm in the database and is able to create new book entries, edit current book entries, and delete any entry.",
+                "description": "This dynamic web application manages a SQLite database for a fictional library. The application displays the items in the database and is able to create new book entries, edit current book entries, and delete any entry.",
                 "technologies": ["Node.js", " Express.js", " Pug", " MySQL", " JavaScript" ],
                 "liveLink": [],
                 "githubLink": "https://github.com/jimmikedave/SQL-Library-Manager"
