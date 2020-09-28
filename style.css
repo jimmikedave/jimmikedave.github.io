@@ -98,6 +98,7 @@ header {
     background: rgb(138, 159, 228);
     color: white;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .my-work {
