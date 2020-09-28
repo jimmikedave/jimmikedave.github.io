@@ -20,12 +20,9 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #000;
 }
 
-a:hover {
-    color: rgb(138, 159, 228);
-}
 
 /* Navigation Bar */
 
@@ -64,6 +61,15 @@ a:hover {
 .name:hover {
     transition: all .5s;
     transform: scale(1.1);
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: rgb(138, 159, 228);
 }
 
 /* Header */
@@ -109,6 +115,7 @@ header {
 
 .project-container {
     padding-top: 80px;
+    padding-bottom: 150px;
 }
 
 .project-row {
@@ -144,7 +151,6 @@ header {
 }
 
 .contact-container {
-    padding-top: 50px;
     color: #000;
 }
 
