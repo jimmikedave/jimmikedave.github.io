@@ -1,3 +1,5 @@
+/* Display projects */
+
 // Call the Projects() class
 const project = new Projects().projects;
 
