@@ -1,0 +1,160 @@
+/* Global Layout */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(233, 236, 243);
+    font-family: sans-serif;
+    background: rgb(233, 236, 243);
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Navigation Bar */
+
+.nav-bar {
+    width: 100%;
+    background: rgb(61, 63, 73);
+    color: white;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    border-bottom: 7px solid rgb(138, 159, 228);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700; 
+    list-style-type: none; 
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1300px;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+
+.name:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: rgb(138, 159, 228);
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 285px;
+    background: url('../images/pexels-photo-416779_2.jpg') no-repeat center;
+    background-size: cover;
+    color: rgb(61, 63, 73);
+}
+
+.intro {
+    padding-bottom: 310px;
+}
+
+/* Main Body */
+
+.bio-container {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding-top: 55px;
+    
+}
+
+.bio {
+    background: rgb(138, 159, 228);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.my-work {
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgb(61, 63, 73);
+}
+
+.project-container {
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: auto;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.project-card {
+    color: rgb(61, 63, 73);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(74, 76, 83);
+    padding: 15px;
+    max-width: 600px;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.project-card:hover{
+    box-shadow: 10px 10px rgb(138, 159, 228);
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.project-card a {
+    padding: 10px;
+}
+
+.contact-container {
+    color: #000;
+}
+
+.copyright {
+    color: #000;
+    padding-top: 100px;
+}
