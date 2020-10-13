@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    color: rgb(233, 236, 243);
+    background-color:#687864;
     font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -67,7 +67,7 @@ a {
 }
 
 .nav a:hover {
-    color: rgb(138, 159, 228);
+    color:#687864;
 }
 
 /* Header */
@@ -113,7 +113,7 @@ header {
 .project-container {
     padding-top: 80px;
     padding-bottom: 150px;
-    background-color: rgb(138, 159, 228);
+    background-color: #8FC1E3;
 }
 
 .project-container hr {
