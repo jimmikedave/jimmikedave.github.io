@@ -19,7 +19,7 @@ class Projects {
                 "projectName": "React Gallery App",
                 "description": "Image gallery application that is built with a modern single page application to keep it fast, modular, and in sync with current web development trends. Axios is used to fetch data from the Flickr API. You can display images based on the main tabs or search for a category of images.",
                 "technologies": ["React", " Flickr API", " JavaScript", " JSX"  ],
-                "liveLink": [],
+                "liveLink": ["https://jimmikedave.github.io/React-Gallery-App/"],
                 "githubLink": "https://github.com/jimmikedave/React-Gallery-App"
             },
             {
