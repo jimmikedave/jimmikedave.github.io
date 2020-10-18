@@ -4,7 +4,7 @@ class Projects {
             {
                 "projectName": "Full Stack React App with REST API",
                 "description": "A user interface is created for a school course application with React, along with a REST API for the SQL database created with Node.js and Express. The database contains the course table and the user table. Users can view a list of the courses, and each course's detail. Those who have an account can create, update, and delete courses of their own. If a user does not have an account they can easily sign-up.",
-                "technologies": ["React", " Node.js", " Express", " JavaScript" ],
+                "technologies": ["React", " Context API", " Node.js", " Express", " JavaScript" ],
                 "liveLink": [],
                 "githubLink": "https://github.com/jimmikedave/Full-Stack-App-with-React-and-a-REST-API"
             },
