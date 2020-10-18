@@ -44,7 +44,7 @@ for(i=0; i<project.length; i++) {
 
         // Each card receives the appropriate information for each project.
         projectTitle.textContent = project[i].projectName;
-        projectTech.textContent = `Technologies: ${project[i].technologies}`;
+        projectTech.textContent = `Stack: ${project[i].technologies}`;
         projectDescription.textContent = project[i].description;
         linkHeader.textContent = 'GitHub and Live Link';
         gitHubLink.href = project[i].githubLink;
@@ -88,7 +88,7 @@ for(i=0; i<project.length; i++) {
 
         // Each card receives the appropriate information for each project.
         projectTitle.textContent = project[i].projectName;
-        projectTech.textContent = `Technologies: ${project[i].technologies}`;
+        projectTech.textContent = `Stack: ${project[i].technologies}`;
         projectDescription.textContent = project[i].description;
         linkHeader.textContent = 'GitHub Link';
         gitHubLink.href = project[i].githubLink;
