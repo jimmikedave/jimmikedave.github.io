@@ -2,6 +2,15 @@
 * {
     box-sizing: border-box;
 }
+header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 285px;
+    background: url('../images/pexels-merry-zar-2306359.jpg') no-repeat center;
+    background-size: cover;
+    color: rgb(19, 23, 42);
+}
 
 body {
     margin: 0;
@@ -14,16 +23,6 @@ body {
 a {
     text-decoration: none;
     color: #000;
-}
-
-header {
-    text-align: center;
-    overflow: hidden;
-    padding-top: 150px;
-    padding-bottom: 285px;
-    background: url('../images/pexels-merry-zar-2306359.jpg') no-repeat center;
-    background-size: cover;
-    color: rgb(19, 23, 42);
 }
 
 /* Navigation Bar */
