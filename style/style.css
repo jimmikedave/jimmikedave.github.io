@@ -79,7 +79,8 @@ a {
 /* Intro */
 
 .intro img:hover {
-    transform: rotate(20deg);
+    transform: rotate(30deg);
+    transition-duration: .4s;
 }
 
 /* About Me */
