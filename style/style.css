@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color:#faa60a;
+    background-color:hsl(221, 100%, 76.5%);
     font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -108,7 +108,7 @@ a {
 .project-container {
     padding-top: 80px;
     padding-bottom: 150px;
-    background-color: hsl(221, 100%, 76.5%);
+    background-color: #faa60a;
 }
 
 .project-container hr {
