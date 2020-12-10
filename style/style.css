@@ -215,14 +215,14 @@ Interactions
 	transform: rotate3d(1, 0, 0, 180deg);
 } 
 
-/* .side-a,
+.side-a,
 .side-b {
 	backface-visibility: hidden;
 }
 
  .side-b {
 	transform: rotateX(180deg);
-} */
+}
 
 /*******************
 Contact
