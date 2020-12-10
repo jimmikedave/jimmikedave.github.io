@@ -336,6 +336,10 @@ button[type="submit"]:hover {
         z-index: 0;
     }
 
+    .side-b {
+        transform: none;
+    }
+
     .link-container {
         padding-bottom: 35px;
     }
