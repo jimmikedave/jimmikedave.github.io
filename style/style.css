@@ -323,10 +323,10 @@ button[type="submit"]:hover {
 }
 
 /*******************
-720px
+1000px
 ********************/
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
 
     .photo:hover {
         transform: rotate3d(0, 0, 0, 0deg);
