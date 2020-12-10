@@ -343,4 +343,8 @@ button[type="submit"]:hover {
     .link-container {
         padding-bottom: 35px;
     }
+
+    .photo-desc {
+        padding: 30px;
+    }
 }
