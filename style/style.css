@@ -364,4 +364,8 @@ button[type="submit"]:hover {
     .photo-desc {
         padding: 70px;
     }
+
+    .certificates {
+        flex-direction: column;
+    }
 }
