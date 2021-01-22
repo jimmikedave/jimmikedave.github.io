@@ -117,6 +117,7 @@ About Me
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    margin-top: 70px;
 }
 
 .certificates img {
