@@ -114,10 +114,28 @@ Intro
     animation: moveInLeft 1s ease-out;
 }
 
+.github-animated {
+    display: inline-block;
+    animation: moveInBottom .5s ease-out .25s;
+    animation-fill-mode: backwards;
+}
+
+.linkedin-animated {
+    display: inline-block;
+    animation: moveInBottom .5s ease-out .5s;
+    animation-fill-mode: backwards;
+}
+
+.twitter-animated {
+    display: inline-block;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px); /*x direction is left to right*/
+        transform: translateX(-100px); 
     }
 
     80% {
@@ -126,7 +144,7 @@ Intro
 
     100% {
         opacity: 1;
-        transform: translate(0); /*return to default look*/
+        transform: translate(0); 
     }
 }
 
@@ -149,7 +167,7 @@ Intro
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(20px); 
+        transform: translateY(30px); 
     }
 
     100% {
