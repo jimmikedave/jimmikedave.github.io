@@ -100,11 +100,18 @@ Intro
 
 .heading-primary-sub {
     display: block;
-    
+    font-size: 40px;
+    font-weight: 400;
+
+    animation: moveInRight 1s ease-out;
 }
 
 .heading-primary-loc {
     display: block;
+    font-size: 20px;
+    font-weight: 700;
+
+    animation: moveInLeft 1s ease-out;
 }
 
 @keyframes moveInLeft {
@@ -131,6 +138,18 @@ Intro
 
     80% {
         transform: translateX(-10px); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0); 
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
     }
 
     100% {
