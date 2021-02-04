@@ -57,24 +57,22 @@ Navigation Bar
     padding: 5px 10px 10px 10px;
 }
 
-.nav .name {
+.name {
     display: block;
     margin-right: auto;
     color: white;
+    cursor: default;
 }
 
 .name:hover {
     transition: all .5s;
     transform: scale(1.1);
+    color:#faa60a;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
-}
-
-.nav a:hover {
-    color:#faa60a;
 }
 
 .intro {
