@@ -5,17 +5,6 @@ Global Layout
     box-sizing: border-box;
 }
 
-
-header {
-    text-align: center;
-    overflow: hidden;
-    padding-top: 150px;
-    padding-bottom: 285px;
-    background: url('../images/pexels-merry-zar-2306359.jpg') no-repeat center;
-    background-size: cover;
-    color: rgb(19, 23, 42);
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -24,16 +13,11 @@ body {
     font-family: Tahoma, Geneva, sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
 /*******************
 Navigation Bar
 ********************/
 
-.nav-bar {
+.nav {
     width: 100%;
     background: rgba(19, 29, 42, 0.781);
     color: white;
@@ -44,7 +28,7 @@ Navigation Bar
     z-index: 1;
 }
 
-.nav {
+.nav--tabs {
     display: flex;
     justify-content: space-around;
     font-weight: 700; 
@@ -54,37 +38,51 @@ Navigation Bar
     max-width: 1300px;
 }
 
-.nav li {
+.nav--tabs li {
     padding: 5px 10px 10px 10px;
 }
 
-.name {
+.nav--tabs a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav--tabs a:hover {
+    color:#faa60a
+}
+
+.initials {
     display: block;
     margin-right: auto;
     color: white;
     cursor: default;
 }
 
-.name:hover {
+.initials:hover {
     transition: all .5s;
     transform: scale(1.1);
     color:#faa60a;
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-}
-
-.intro {
-    padding-bottom: 310px;
 }
 
 /*******************
 Intro
 ********************/
 
-.intro img:hover {
+.header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 285px;
+    background: url('../images/pexels-merry-zar-2306359.jpg') no-repeat center;
+    background-size: cover;
+    color: rgb(19, 23, 42);
+}
+
+.header__title-box {
+    padding-bottom: 310px;
+}
+
+.header__title-box img:hover {
     transform: rotate(30deg);
     transition-duration: .4s;
 }
@@ -179,7 +177,7 @@ Intro
 About Me 
 ********************/
 
-.bio-container {
+.bio {
     background-color: rgb(19, 23, 42);
     justify-content: space-around;
     margin: 0 auto;
@@ -187,7 +185,7 @@ About Me
     padding-bottom: 50px;
 }
 
-.bio {
+.bio__container {
     text-align: left;
     color: white;
     max-width: 1800px;
@@ -197,7 +195,7 @@ About Me
     padding-right: 150px;
 }
 
-.certificates {
+.bio__certificate-box {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -205,24 +203,25 @@ About Me
     margin-top: 70px;
 }
 
-.certificates img {
+.bio__certificate-box img {
     max-width: 600px;
     max-height: 400px;
     width: 100%;
     height: 100%;
+    padding: 5px;
 }
 
 /*******************
 My Work
 ********************/
 
-.project-container {
+.projects {
     padding-top: 80px;
     padding-bottom: 150px;
     background-color: #faa60a;
 }
 
-.project-container hr {
+.projects--title hr {
     margin-top: 10px;
     height: 2px;
     color:rgb(42, 19, 41);
@@ -230,12 +229,20 @@ My Work
     border-color: rgb(19, 23, 42);
 }
 
-.photo-container {
+.projects--title {
+    text-align: right;
+    padding-bottom: 50px;
+    color: rgb(19, 23, 42);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects__container {
 	text-align: center;
     margin-bottom: 2.5em;
 }
 
-.photo-container img {
+.projects__container img {
     width: 100%;
     height: 100%;
     position: relative;
@@ -243,15 +250,7 @@ My Work
     border-radius: 5px;
 }
 
-.my-work {
-    text-align: right;
-    padding-bottom: 50px;
-    color: rgb(19, 23, 42);
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-.project-row {
+.projects__row {
     display: flex;
     justify-content: space-around;
     max-width: 1500px;
@@ -262,7 +261,7 @@ My Work
     width: 100%;
 }
 
-.project-card {
+.projects__card {
     color: rgb(251, 251, 251);
     max-width: 600px;
     max-height: 400px;
@@ -270,7 +269,7 @@ My Work
     height: 100%;
 }
 
-.photo-desc {
+.projects__photo-desc {
     background-color: rgb(19, 23, 42);;
 	position: absolute;
 	top: 0;
@@ -287,43 +286,43 @@ My Work
     border-radius: 5px;
 }
 
-.link-header {
+.projects--link-header {
     text-align: left;
     padding-left: 18px;
 }
 
-.link-container {
+.projects--link-container {
     display: flex;
     flex-direction: row;
     padding-left: 18px;
 }
 
-.link-container a {
+.projects--link-container a {
     padding: 5px;
 }
 
 /*******************
 Interactions
 ********************/
-.content {
+.projects__content {
 	perspective: 700px;
 }
 
-.photo {
+.projects--photo {
 	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
 	transform-style: preserve-3d;
 }
 
-.photo:hover {
+.projects--photo:hover {
 	transform: rotate3d(1, 0, 0, 180deg);
 } 
 
-.side-a,
-.side-b {
+.projects--side-a,
+.projects--side-b {
 	backface-visibility: hidden;
 }
 
- .side-b {
+ .projects--side-b {
 	transform: rotateX(180deg);
 }
 
@@ -331,16 +330,12 @@ Interactions
 Contact
 ********************/
 
-.contact-container {
+.contact {
     color: #000;
     padding-top: 80px;
 }
 
-.copyright {
-    color: #000;
-}
-
-.form-container {
+.contact__form-container {
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
@@ -351,14 +346,14 @@ Contact
     text-align: left;
 }
 
-.form-group {
+.contact__form-group {
     width: 100%;
     margin-top: 20px;
     font-size: 20px;
 }
 
-.form-group input,
-.form-group textarea {
+.contact__form-group input,
+.contact__form-group textarea {
     width: 100%;
     padding: 5px;
     font-size: 18px;
@@ -423,6 +418,10 @@ button[type="submit"]:hover {
         opacity: 0;
         pointer-events: none;
     }
+}
+
+.copyright {
+    color: #000;
 }
 
 /*******************

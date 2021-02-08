@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
-        <div class="nav-bar">
-            <ul class="nav" >
-                <li class="name">JMD</li>
+        <div class="nav">
+            <ul class="nav--tabs" >
+                <li class="initials">JMD</li>
                 <li><a class="scroll" href=#home>Home</a></li>
                 <li><a class="scroll" href=#about>About</a></li>
                 <li><a class="scroll" href=#projects>My Work</a></li>
@@ -16,8 +16,8 @@
             </ul>
         </div>
         <div id="home">
-            <header>
-                    <div class="intro">
+            <header class="header">
+                    <div class="header__title-box">
                         <h1 class="heading-primary">
                             <span class="heading-primary-main">Jim-Michael David</span>
                             <span class="heading-primary-sub">Full Stack Developer</span>
@@ -48,10 +48,9 @@
             </header>
         </div>
         <main> 
-                <div class="bio-container" id="about">
-                    <div class="bio" id="bio">
-                        <h1>About Me</h1>
-                        <hr>
+                <div class="bio" id="about">
+                    <div class="bio__container">
+                        <h1>About Me<hr></h1>
                         <br>
                         <br>
                         <br>
@@ -65,23 +64,23 @@
                             and work with diverse teams to accomplish the goal. I enjoy learning new technologies and exploring new ways to solve problems. When I'm not at my desk coding,
                             you can catch me running through the boroughs of NYC or hiking in upstate NY.
                         </h2>
-                        <div class="certificates">
+                        <div class="bio__certificate-box">
                             <img src="images/treehouse.PNG">
                             <img src="images/React-Native-Udemy.jpg">  
                         </div>
                     </div>
-                    
                 </div>
-                <div class="project-container" id="projects">
-                    <h1 class="my-work">My Work<hr></h1>
+
+                <div class="projects" id="projects">
+                    <h1 class="projects--title">My Work<hr></h1>
                     <br>
                     <br>
-                    <div class="project-row content">
-                        <div class="photo-container">
+                    <div class="projects__row projects__content">
+                        <div class="projects__container">
                             <h1>Student Course Registry</h1>
-                            <div class="project-card photo">
-                                <img class="side-a" src="images/school_course.PNG">
-                                <div class="photo-desc side-b">
+                            <div class="projects__card projects--photo">
+                                <img class="projects--side-a" src="images/school_course.PNG">
+                                <div class="projects__photo-desc projects--side-b">
                                     <h2>Stack: React, Node.js, Express, MySQL, Context API, JavaScript</h2>
                                     <h4>A user interface for a school course application created with React, along with a REST API for the SQL database created with Node.js and Express. 
                                         The database contains the course table and the user table. Users can view a list of the courses, and each course's detail. Those who have an account 
@@ -89,17 +88,17 @@
                                     </h4>
                                 </div>
                             </div>
-                            <h4 class="link-header">Project Links:</h4>
-                            <div class="link-container">
+                            <h4 class="projects--link-header">Project Links:</h4>
+                            <div class="projects--link-container">
                                 <a href="https://github.com/jimmikedave/Full-Stack-App-with-React-and-a-REST-API" target="_blank" class="link"><img src="images/github.svg"></a>
                                 <a href="https://jimmikedave.github.io/Full-Stack-App-with-React-and-a-REST-API" target="_blank" class="link"><img src="images/link.svg"></a>
                             </div>
                         </div>
-                        <div class="photo-container">
+                        <div class="projects__container">
                             <h1>Spotify Insight</h1>
-                            <div class="project-card photo">
-                                <img class="side-a" src="images/Spotify_Insight.PNG">
-                                <div class="photo-desc side-b">
+                            <div class="projects__card projects--photo">
+                                <img class="projects--side-a" src="images/Spotify_Insight.PNG">
+                                <div class="projects__photo-desc projects--side-b">
                                     <h2>Stack: React, JSX, Node.js, Express, Oauth, Spotify API, JavaScript, HTML, CSS</h2>
                                     <h4>React application that gives the user access to Spotify user information about what song they are currently listening to and their current top 50 songs, 
                                         based off of Spotify's algorithm. The login button redirects the user to a server on heroku, where oauth is used to authorize the application with Spotify.
@@ -107,17 +106,17 @@
                                     </h4>
                                 </div>
                             </div>
-                            <h4 class="link-header">Project Links:</h4>
-                            <div class="link-container">
+                            <h4 class="projects--link-header">Project Links:</h4>
+                            <div class="projects--link-container">
                                 <a href="https://github.com/jimmikedave/Spotify-Insight" target="_blank" class="link"><img src="images/github.svg"></a>
                                 <a href="https://jimmikedave.github.io/Spotify-Insight/" target="_blank" class="link"><img src="images/link.svg"></a>
                             </div>
                         </div>
-                        <div class="photo-container">
+                        <div class="projects__container">
                             <h1>Type For Your Life</h1>
-                            <div class="project-card photo">
-                                <img class="side-a" src="images/oop_typing.PNG">
-                                <div class="photo-desc side-b">
+                            <div class="projects__card projects--photo">
+                                <img class="projects--side-a" src="images/oop_typing.PNG">
+                                <div class="projects__photo-desc projects--side-b">
                                     <h2>Stack: JavaScript, HTML, CSS</h2>
                                     <h4>Browser-based typing game created with JavaScript and Object-Oriented Programming. The objective of the game is to type the phrase presented 
                                         without making any errors and before the timer runs out. After each phrase is completed, a new random phrase will appear until the player loses. 
@@ -125,63 +124,60 @@
                                     </h4>
                                 </div>
                             </div>
-                            <h4 class="link-header">Project Links:</h4>
-                            <div class="link-container">
+                            <h4 class="projects--link-header">Project Links:</h4>
+                            <div class="projects--link-container">
                                 <a href="https://github.com/jimmikedave/Type-For-Your-Life" target="_blank" class="link"><img src="images/github.svg"></a>
                                 <a href="https://jimmikedave.github.io/Type-For-Your-Life/" target="_blank" class="link"><img src="images/link.svg"></a>
                             </div>
                         </div>
-                        <div class="photo-container">
+                        <div class="projects__container">
                             <h1>Jim's Image Gallery</h1>
-                            <div class="project-card photo">
-                                <img class="side-a" src="images/react_flickr.PNG">
-                                <div class="photo-desc side-b">
+                            <div class="projects__card projects--photo">
+                                <img class="projects--side-a" src="images/react_flickr.PNG">
+                                <div class="projects__photo-desc projects--side-b">
                                     <h2>Stack: React, JSX, JavaScript, Flickr API</h2>
                                     <h4>Image gallery application that is built with a modern single page application to keep it fast, modular, and in sync with current web development 
                                         trends. Axios is used to fetch data from the Flickr API. You can display images based on the main tabs or search for a category of images.
                                     </h4>
                                 </div>
                             </div>
-                            <h4 class="link-header">Project Links:</h4>
-                            <div class="link-container">
+                            <h4 class="projects--link-header">Project Links:</h4>
+                            <div class="projects--link-container">
                                 <a href="https://github.com/jimmikedave/React-Gallery-App" target="_blank" class="link"><img src="images/github.svg"></a>
                                 <a href="https://jimmikedave.github.io/React-Gallery-App/" target="_blank" class="link"><img src="images/link.svg"></a>
                             </div>
                         </div>
                     </div>  
                 </div>
-                <div class="contact-container" id="contact-info">
-                    <div class="contact-info">
-                        <h1>Contact</h1>
-                        <h3>Email: jimmichael.david@gmail.com</h3>
-                        <div class="form-container">
-                            <form action="https://formspree.io/f/xleolaqr" method="POST" id="my-form">
-                                <div class="form-group">
-                                    <label for="firstName">First Name</label>
-                                    <input type="text" id="firstName" name="firstName" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="firstName">Last Name</label>
-                                    <input type="text" id="lastName" name="lastName" required>
-                                </div>
-    
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea type="text" id="message" name="message" rows="10" required></textarea>
-                                </div>
-                                
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
-                        <div id="status"></div>
+                <div class="contact" id="contact-info">
+                    <h1>Contact</h1>
+                    <h3>Email: jimmichael.david@gmail.com</h3>
+                    <div class="contact__form-container">
+                        <form action="https://formspree.io/f/xleolaqr" method="POST" id="my-form">
+                            <div class="contact__form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <label for="firstName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
 
+                            <div class="contact__form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <label for="message">Message</label>
+                                <textarea type="text" id="message" name="message" rows="10" required></textarea>
+                            </div>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
                     </div>
+                    <div id="status"></div>
                 </div>     
         </main>
         <footer>
