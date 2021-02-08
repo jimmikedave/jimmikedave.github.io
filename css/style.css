@@ -43,13 +43,13 @@ Navigation Bar
 .nav--tabs a:hover {
   color: #faa60a; }
 
-.initials {
+.nav--initials {
   display: block;
   margin-right: auto;
   color: white;
   cursor: default; }
 
-.initials:hover {
+.nav--initials:hover {
   transition: all .5s;
   transform: scale(1.1);
   color: #faa60a; }
