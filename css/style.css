@@ -349,15 +349,15 @@ button[type="submit"]:hover {
 1000px
 ********************/
 @media (max-width: 1000px) {
-  .photo:hover {
+  .projects--photo:hover {
     transform: rotate3d(0, 0, 0, 0deg); }
-  .photo-container img {
+  .projects--container img {
     z-index: 0; }
-  .side-b {
+  .projects--side-b {
     transform: none; }
-  .link-container {
+  .projects--link-container {
     padding-bottom: 35px; }
-  .photo-desc {
+  .projects__photo-desc {
     padding: 70px; }
-  .certificates {
+  .bio__certificate-box {
     flex-direction: column; } }
