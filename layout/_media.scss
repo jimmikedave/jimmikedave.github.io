@@ -1,0 +1,30 @@
+/*******************
+1000px
+********************/
+
+@media (max-width: 1000px) {
+
+    .projects--photo:hover {
+        transform: rotate3d(0, 0, 0, 0deg);
+    } 
+
+    .projects--container img {
+        z-index: 0;
+    }
+
+    .projects--side-b {
+        transform: none;
+    }
+
+    .projects--link-container {
+        padding-bottom: 35px;
+    }
+
+    .projects__photo-desc {
+        padding: 70px;
+    }
+
+    .bio__certificate-box {
+        flex-direction: column;
+    }
+}

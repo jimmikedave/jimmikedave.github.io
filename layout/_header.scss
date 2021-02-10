@@ -1,0 +1,64 @@
+/*******************
+Intro
+********************/
+
+.header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 285px;
+    background: url('../images/pexels-merry-zar-2306359.jpg') no-repeat center;
+    background-size: cover;
+    color: rgb(19, 23, 42);
+}
+
+.header__title-box {
+    padding-bottom: 310px;
+}
+
+.header__title-box img:hover {
+    transform: rotate(30deg);
+    transition-duration: .4s;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+
+    animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+
+    animation: moveInRight 1s ease-out;
+}
+
+.heading-primary-loc {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+
+    animation: moveInLeft 1s ease-out;
+}
+
+.github-animated {
+    display: inline-block;
+    animation: moveInBottom .5s ease-out .25s;
+    animation-fill-mode: backwards;
+}
+
+.linkedin-animated {
+    display: inline-block;
+    animation: moveInBottom .5s ease-out .5s;
+    animation-fill-mode: backwards;
+}
+
+.twitter-animated {
+    display: inline-block;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}

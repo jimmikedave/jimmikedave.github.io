@@ -1,0 +1,16 @@
+/*******************
+Global Layout
+********************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:hsl(221, 100%, 76.5%);
+    font-family: Tahoma, Geneva, sans-serif;
+}
