@@ -1,7 +1,4 @@
-/*******************
-Intro
-********************/
-
+// Intro
 .header {
     text-align: center;
     overflow: hidden;
@@ -10,39 +7,15 @@ Intro
     background: url('../images/pexels-merry-zar-2306359.jpg') no-repeat center;
     background-size: cover;
     color: rgb(19, 23, 42);
-}
 
-.header__title-box {
-    padding-bottom: 310px;
-}
+    &__title-box {
+        padding-bottom: 310px;
+    }
 
-.header__title-box img:hover {
-    transform: rotate(30deg);
-    transition-duration: .4s;
-}
-
-.heading-primary-main {
-    display: block;
-    font-size: 60px;
-    font-weight: 400;
-
-    animation: moveInLeft 1s ease-out;
-}
-
-.heading-primary-sub {
-    display: block;
-    font-size: 40px;
-    font-weight: 400;
-
-    animation: moveInRight 1s ease-out;
-}
-
-.heading-primary-loc {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-
-    animation: moveInLeft 1s ease-out;
+    &__title-box img:hover {
+        transform: rotate(30deg);
+        transition-duration: .4s;
+    }
 }
 
 .github-animated {

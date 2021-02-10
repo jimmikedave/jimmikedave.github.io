@@ -1,0 +1,18 @@
+// Contact Form Button
+button[type="submit"] {
+    width:100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(19, 23, 42);
+    color: hsl(221, 100%, 76.5%) ;
+}

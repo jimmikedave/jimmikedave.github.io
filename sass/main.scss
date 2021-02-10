@@ -9,8 +9,37 @@
 @import "layout/bio";
 @import "layout/contact";
 @import "layout/header";
-@import "layout/media";
 @import "layout/navigation";
 @import "layout/projects";
 
 @import "pages/home";
+
+/*******************
+1000px Media Query
+********************/
+@media (max-width: 1000px) {
+
+    .projects {
+        
+        &--photo:hover {
+            transform: rotate3d(0, 0, 0, 0deg); }
+      
+        &--side-a {
+              visibility: hidden;
+          }
+      
+        &--side-b {
+            transform: none; 
+            z-index: 7;
+          }
+      
+        &--link-container {
+            padding-bottom: 35px; }
+      
+        &__photo-desc {
+            padding: 70px; }
+    }
+    
+    .bio__certificate-box {
+      flex-direction: column; } 
+}

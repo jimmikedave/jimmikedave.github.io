@@ -11,40 +11,41 @@ Navigation Bar
     position: fixed;
     text-align: center;
     z-index: 1;
+
+    &--tabs {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 700; 
+        list-style-type: none; 
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1300px;
+    }
+    
+    &--tabs li {
+        padding: 5px 10px 10px 10px;
+    }
+    
+    &--tabs a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    &--tabs a:hover {
+        color:#faa60a
+    }
+    
+    &--initials {
+        display: block;
+        margin-right: auto;
+        color: white;
+        cursor: default;
+    }
+    
+    &--initials:hover {
+        transition: all .5s;
+        transform: scale(1.1);
+        color:#faa60a;
+    }
 }
 
-.nav--tabs {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700; 
-    list-style-type: none; 
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1300px;
-}
-
-.nav--tabs li {
-    padding: 5px 10px 10px 10px;
-}
-
-.nav--tabs a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav--tabs a:hover {
-    color:#faa60a
-}
-
-.nav--initials {
-    display: block;
-    margin-right: auto;
-    color: white;
-    cursor: default;
-}
-
-.nav--initials:hover {
-    transition: all .5s;
-    transform: scale(1.1);
-    color:#faa60a;
-}

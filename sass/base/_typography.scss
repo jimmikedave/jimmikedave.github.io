@@ -1,0 +1,62 @@
+// Body
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+// Copyright
+.copyright {
+    color: #000;
+}
+
+// Heading
+.heading-primary {
+    &-main {
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+    
+        animation: moveInLeft 1s ease-out;
+    }
+    
+    &-sub {
+        display: block;
+        font-size: 40px;
+        font-weight: 400;
+    
+        animation: moveInRight 1s ease-out;
+    }
+    
+    &-loc {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+    
+        animation: moveInLeft 1s ease-out;
+    }
+}
+
+// Contact Form
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: #2af366;
+    color: white;
+    animation: status 3s ease forwards;
+}
+
+#status.error {
+    background-color: #f32a2a;
+    color: white;
+    animation: status 3s ease forwards;
+}
+
+textarea {
+    resize: vertical;
+}
