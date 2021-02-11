@@ -1,3 +1,3 @@
 # jimmikedave.github.io
 
-Hello! My name is Jim-Michael David, and welcome to my portfolio site. This site showcases the projects I've worked on through my time as a TreeHouse student, personal projects, and my personal bio.
+Hello and welcome to my portfolio. My name is Jim-Michael David, and I am a Full Stack Developer.This site showcases the applications I have built in my time as a developer. These projects include a Full Stack Student Course Registry, an Object Oriented Typing Game, a Spotify Application, and a Photo Gallery. I look forward to meeting you.
