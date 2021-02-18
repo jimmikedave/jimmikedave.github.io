@@ -1,28 +1,27 @@
-// Heading Load
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px); 
+        transform: translateX(-10rem);
     }
 
     80% {
-        transform: translateX(10px); 
+        transform: translateX(1rem); 
     }
 
     100% {
         opacity: 1;
-        transform: translate(0); 
+        transform: translate(0);
     }
 }
 
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px); 
+        transform: translateX(10rem); 
     }
 
     80% {
-        transform: translateX(-10px); 
+        transform: translateX(-1rem); 
     }
 
     100% {
@@ -34,7 +33,7 @@
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(30px); 
+        transform: translateY(2rem); 
     }
 
     100% {
@@ -59,4 +58,25 @@
         opacity: 0;
         pointer-events: none;
     }
+}
+
+#status {
+    width: 90%;
+    max-width: 50rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: #2af366;
+    color: white;
+    animation: status 3s ease forwards;
+}
+
+#status.error {
+    background-color: #f32a2a;
+    color: white;
+    animation: status 3s ease forwards;
 }

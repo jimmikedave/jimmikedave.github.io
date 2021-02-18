@@ -1,13 +1,17 @@
-// Global Layout
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // default 16px
+    // 10px = 1 rem
+    font-size: 62.5%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color:hsl(221, 100%, 76.5%);
+    box-sizing: border-box;
 }

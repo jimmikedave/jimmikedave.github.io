@@ -1,16 +1,11 @@
-/*******************
-Navigation Bar
-********************/
-
 .nav {
     width: 100%;
-    background: rgba(19, 29, 42, 0.781);
-    color: white;
+    background: $color-primary-dark-2;
+    font-size: $default-font-size;
     height: 65px;
-    padding: 15px;
+    padding: 1rem;
     position: fixed;
-    text-align: center;
-    z-index: 1;
+    z-index: 100;
 
     &--tabs {
         display: flex;
@@ -18,8 +13,7 @@ Navigation Bar
         font-weight: 700; 
         list-style-type: none; 
         margin: 0 auto;
-        padding: 0;
-        max-width: 1300px;
+        max-width: 1350px;
     }
     
     &--tabs li {
@@ -28,24 +22,24 @@ Navigation Bar
     
     &--tabs a {
         text-decoration: none;
-        color: white;
+        color: $color-white;
     }
     
     &--tabs a:hover {
-        color:#faa60a
+        color:$color-secondary;
     }
     
     &--initials {
         display: block;
         margin-right: auto;
-        color: white;
+        color: $color-white;
         cursor: default;
+        backface-visibility: hidden;
     }
     
     &--initials:hover {
         transition: all .5s;
         transform: scale(1.1);
-        color:#faa60a;
+        color:$color-secondary;
     }
 }
-
