@@ -1,193 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"> 
-    <title class="title">Jim-Michael David's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    
+    <title>Jim-Michael David</title>
 </head>
-    <body>
-        <div class="nav">
-            <ul class="nav--tabs" >
-                <li class="nav--initials">JMD</li>
-                <li><a class="scroll" href=#home>Home</a></li>
-                <li><a class="scroll" href=#about>About</a></li>
-                <li><a class="scroll" href=#projects>My Work</a></li>
-                <li><a class="scroll" href=#contact-info>Contact</a></li>
-            </ul>
+<body>
+    <div class="nav">
+        <ul class="nav--tabs" >
+            <li class="nav--initials">JMD</li>
+            <li><a class="scroll" href=#home>Home</a></li>
+            <li><a class="scroll" href=#about>About</a></li>
+            <li><a class="scroll" href=#my-work>My Work</a></li>
+            <li><a class="scroll" href=#contact-info>Contact</a></li>
+        </ul>
+    </div>
+    <header class="header u-margin-bottom-big" id="home">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="images/flying-birds.mp4" type="video/mp4">
+                Browser not supported :(
+            </video>
         </div>
-        <div id="home">
-            <header class="header">
-                    <div class="header__title-box">
-                        <h1 class="heading-primary">
-                            <span class="heading-primary-main">Jim-Michael David</span>
-                            <span class="heading-primary-sub">Full Stack Developer</span>
-                            <span class="heading-primary-loc">Brooklyn, New York</span>
-                        </h1>
-                        <a 
-                            href="https://github.com/jimmikedave" 
-                            target="_blank"
-                            class="github-animated"
-                        >
-                            <img src="images/github.svg" alt="github-svg">
-                        </a>
-                        <a 
-                            href="https://www.linkedin.com/in/jim-michael-david/" 
-                            target="_blank"
-                            class="linkedin-animated"
-                        >
-                            <img src="images/linkedin.svg" alt="linkedin-svg">
-                        </a>
-                        <a 
-                            href="https://twitter.com/jimmikedave" 
-                            target="_blank"
-                            class="twitter-animated"
-                        >
-                            <img src="images/twitter.svg" alt="twitter-svg">
-                        </a>
-                    </div>
-            </header>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Jim-Michael David</span>
+                <span class="heading-primary--sub">Full Stack Developer</span>
+                <span class="heading-primary--tertiary">Brooklyn, New York</span>
+            </h1>
+            <a 
+                href="https://github.com/jimmikedave" 
+                target="_blank"
+                class="github-animated"
+            >
+                <img src="images/github.svg" alt="github-svg">
+            </a>
+            <a 
+                href="https://www.linkedin.com/in/jim-michael-david/" 
+                target="_blank"
+                class="linkedin-animated"
+            >
+                <img src="images/linkedin.svg" alt="linkedin-svg">
+            </a>
+            <a 
+                href="https://twitter.com/jimmikedave" 
+                target="_blank"
+                class="twitter-animated"
+            >
+                <img src="images/twitter.svg" alt="twitter-svg">
+            </a>
         </div>
-        <main> 
-                <div class="bio" id="about">
-                    <div class="bio__container">
-                        <h1>About Me<hr></h1>
-                        <br>
-                        <br>
-                        <br>
-                        <h2>
-                            My name is Jim-Michael David, and I am a Full Stack Developer with an Operations Management background in the Event Production Industry. I received my Full Stack 
-                            JavaScript Developer certificate from TeamTreeHouse, React Native and Hooks certificate from Udemy, and graduated from SUNY Oswego with a focus in Operations Management 
-                            and Information Systems.  
-                        </h2>
-                        <h2>
-                            I am a motivated self-starter who loves to build intricate web applications from project conception to production launch. Can quickly adapt to new environments 
-                            and work with diverse teams to accomplish the goal. I enjoy learning new technologies and exploring new ways to solve problems. When I'm not at my desk coding,
-                            you can catch me running through the boroughs of NYC or hiking in upstate NY.
-                        </h2>
-                        <div class="bio__certificate-box">
-                            <img src="images/treehouse.PNG">
-                            <img src="images/React-Native-Udemy.jpg">  
-                        </div>
+    </header>
+
+    <main>
+        <section class="section-about" id="about">
+            <div class="row" >
+                <div class="col-1-of-2">
+                    <h3 class="heading-primary--sub u-margin-bottom-small">About</h3>
+                    <p class="paragraph">
+                        My name is Jim-Michael David, and I am a Full Stack Developer with an Operations Management background in the Event Production Industry. I received my Full Stack 
+                        JavaScript Developer certificate from TeamTreeHouse, React Native and Hooks certificate from Udemy, and graduated from SUNY Oswego with a focus in Operations Management 
+                        and Information Systems.  
+                    </p>
+                    <p class="paragraph">
+                        I am a motivated self-starter who loves to build intricate web applications from project conception to production launch. Can quickly adapt to new environments 
+                        and work with diverse teams to accomplish the goal. I enjoy learning new technologies and exploring new ways to solve problems. When I'm not at my desk coding,
+                        you can catch me running through the boroughs of NYC or hiking in upstate NY.
+                    </p>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="images/treehouse.PNG" alt="treehouse" class="composition__photo composition__photo--p1">
+                        <img src="images/React-Native-Udemy.jpg" alt="udemy-1" class="composition__photo composition__photo--p2">
                     </div>
                 </div>
-
-                <div class="projects" id="projects">
-                    <h1 class="projects--title">My Work<hr></h1>
-                    <br>
-                    <br>
-                    <div class="projects__row projects__content">
-                        <div class="projects__container">
-                            <h1>Student Course Registry</h1>
-                            <div class="projects__card projects--photo">
-                                <img class="projects--side-a" src="images/school_course.PNG">
-                                <div class="projects__photo-desc projects--side-b">
-                                    <h2>Stack: React, Node.js, Express, MySQL, Context API, JavaScript</h2>
-                                    <h4>A user interface for a school course application created with React, along with a REST API for the SQL database created with Node.js and Express. 
-                                        The database contains the course table and the user table. Users can view a list of the courses, and each course's detail. Those who have an account 
-                                        can create, update, and delete courses of their own. If a user does not have an account they can easily sign-up.
-                                    </h4>
-                                </div>
-                            </div>
-                            <h4 class="projects--link-header">Project Links:</h4>
-                            <div class="projects--link-container">
-                                <a href="https://github.com/jimmikedave/Full-Stack-App-with-React-and-a-REST-API" target="_blank" class="link"><img src="images/github.svg"></a>
-                                <a href="https://jimmikedave.github.io/Full-Stack-App-with-React-and-a-REST-API" target="_blank" class="link"><img src="images/link.svg"></a>
-                            </div>
-                        </div>
-                        <div class="projects__container">
-                            <h1>Spotify Insight</h1>
-                            <div class="projects__card projects--photo">
-                                <img class="projects--side-a" src="images/Spotify_Insight.PNG">
-                                <div class="projects__photo-desc projects--side-b">
-                                    <h2>Stack: React, JSX, Node.js, Express, Oauth, Spotify API, JavaScript, HTML, CSS</h2>
-                                    <h4>React application that gives the user access to Spotify user information about what song they are currently listening to and their current top 50 songs, 
-                                        based off of Spotify's algorithm. The login button redirects the user to a server on heroku, where oauth is used to authorize the application with Spotify.
-                                        The Spotify API id and secret are exported in the server to ensure access safety.
-                                    </h4>
-                                </div>
-                            </div>
-                            <h4 class="projects--link-header">Project Links:</h4>
-                            <div class="projects--link-container">
-                                <a href="https://github.com/jimmikedave/Spotify-Insight" target="_blank" class="link"><img src="images/github.svg"></a>
-                                <a href="https://jimmikedave.github.io/Spotify-Insight/" target="_blank" class="link"><img src="images/link.svg"></a>
-                            </div>
-                        </div>
-                        <div class="projects__container">
-                            <h1>Type For Your Life</h1>
-                            <div class="projects__card projects--photo">
-                                <img class="projects--side-a" src="images/oop_typing.PNG">
-                                <div class="projects__photo-desc projects--side-b">
-                                    <h2>Stack: JavaScript, HTML, CSS</h2>
-                                    <h4>Browser-based typing game created with JavaScript and Object-Oriented Programming. The objective of the game is to type the phrase presented 
-                                        without making any errors and before the timer runs out. After each phrase is completed, a new random phrase will appear until the player loses. 
-                                        An on-screen keyboard shows when a key is pressed and the amount of rounds the player survives will be given at the end of the game.
-                                    </h4>
-                                </div>
-                            </div>
-                            <h4 class="projects--link-header">Project Links:</h4>
-                            <div class="projects--link-container">
-                                <a href="https://github.com/jimmikedave/Type-For-Your-Life" target="_blank" class="link"><img src="images/github.svg"></a>
-                                <a href="https://jimmikedave.github.io/Type-For-Your-Life/" target="_blank" class="link"><img src="images/link.svg"></a>
-                            </div>
-                        </div>
-                        <div class="projects__container">
-                            <h1>Jim's Image Gallery</h1>
-                            <div class="projects__card projects--photo">
-                                <img class="projects--side-a" src="images/react_flickr.PNG">
-                                <div class="projects__photo-desc projects--side-b">
-                                    <h2>Stack: React, JSX, JavaScript, Flickr API</h2>
-                                    <h4>Image gallery application that is built with a modern single page application to keep it fast, modular, and in sync with current web development 
+            </div> 
+        </section>
+        
+        <section class="section-projects" id="my-work">
+            <div class="row section-projects__title">
+                <h1 class="heading-primary--main u-center-text">My Work</h1>
+            </div>
+            <div class="row u-margin-bottom-small">
+                <div class="project" id="school-course">
+                    <figure class="project__shape">
+                        <a href="#school-course-image">
+                            <img src="images/school_course.PNG" alt="School Course" class="project__image project__image--school">
+                        </a>
+                    </figure>
+                    <div class="project__text">
+                        <h3 class="heading-tertiary">Student Course Registry</h3>
+                        <h4>Stack: React, Node.js, Express, MySQL, Context API, JavaScript</h4>
+                        <p class="u-margin-bottom-small">
+                            A user interface for a school course application created with React, along with a REST API for the SQL database created with Node.js and Express. 
+                            The database contains the course table and the user table. Users can view a list of the courses, and each course's detail. Those who have an account 
+                            can create, update, and delete courses of their own. If a user does not have an account they can easily sign-up.
+                        </p>
+                        <a href="https://github.com/jimmikedave/Full-Stack-App-with-React-and-a-REST-API" target="_blank" class="btn-text">Visit Repository</a>
+                        <a href="https://jimmikedave.github.io/Full-Stack-App-with-React-and-a-REST-API" target="_blank" class="btn-text">Visit Application</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row u-margin-bottom-small">
+                <div class="project" id="spotify-insight">
+                    <figure class="project__shape">
+                        <a href="#spotify-insight-image">
+                            <img src="images/Spotify_Insight.PNG" alt="Spotify" class="project__image project__image--spotify">
+                        </a>
+                    </figure>
+                    <div class="project__text">
+                        <h3 class="heading-tertiary">Spotify Insight</h3>
+                        <h4>Stack: React, JSX, Node.js, Express, Oauth, Spotify API, JavaScript, HTML, CSS</h4>
+                        <p class="u-margin-bottom-small">
+                            React application that gives the user access to Spotify user information about what song they are currently listening to and their current top 50 songs, 
+                            based off of Spotify's algorithm. The login button redirects the user to a server on heroku, where oauth is used to authorize the application with Spotify.
+                            The Spotify API id and secret are exported in the server to ensure access safety.
+                        </p>
+                        <a href="https://github.com/jimmikedave/Spotify-Insight" target="_blank" class="btn-text">Visit Repository</a>
+                        <a href="https://jimmikedave.github.io/Spotify-Insight/" target="_blank" class="btn-text">Visit Application</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row u-margin-bottom-small">
+                <div class="project" id="type-for-your-life">
+                    <figure class="project__shape">
+                        <a href="#type-for-your-life-image">
+                            <img src="images/oop_typing.PNG" alt="Type For Your Life" class="project__image project__image--oop">
+                        </a>
+                    </figure>
+                    <div class="project__text">
+                        <h3 class="heading-tertiary">Type For Your Life</h3>
+                        <h4>Stack: JavaScript, HTML, CSS</h4>
+                        <p class="u-margin-bottom-small">
+                            Browser-based typing game created with JavaScript and Object-Oriented Programming. The objective of the game is to type the phrase presented 
+                            without making any errors and before the timer runs out. After each phrase is completed, a new random phrase will appear until the player loses. 
+                            An on-screen keyboard shows when a key is pressed and the amount of rounds the player survives will be given at the end of the game.
+                        </p>
+                        <a href="https://github.com/jimmikedave/Type-For-Your-Life" target="_blank" class="btn-text">Visit Repository</a>
+                        <a href="https://jimmikedave.github.io/Type-For-Your-Life/" target="_blank" class="btn-text">Visit Application</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row u-margin-bottom-small">
+                <div class="project" id="jims-image-gallery">
+                    <figure class="project__shape">
+                        <a href="#jims-image-gallery-image">
+                            <img src="images/react_flickr.PNG" alt="Jim's Image Gallery" class="project__image project__image--flickr">
+                        </a>
+                    </figure>
+                    <div class="project__text">
+                        <h3 class="heading-tertiary">Jim's Image Gallery</h3>
+                        <h4>Stack: React, JSX, JavaScript, Flickr API</h4>
+                        <p class="u-margin-bottom-medium">
+                            Image gallery application that is built with a modern single page application to keep it fast, modular, and in sync with current web development 
                                         trends. Axios is used to fetch data from the Flickr API. You can display images based on the main tabs or search for a category of images.
-                                    </h4>
-                                </div>
-                            </div>
-                            <h4 class="projects--link-header">Project Links:</h4>
-                            <div class="projects--link-container">
-                                <a href="https://github.com/jimmikedave/React-Gallery-App" target="_blank" class="link"><img src="images/github.svg"></a>
-                                <a href="https://jimmikedave.github.io/React-Gallery-App/" target="_blank" class="link"><img src="images/link.svg"></a>
-                            </div>
-                        </div>
-                    </div>  
+                        </p>
+                        <a href="https://github.com/jimmikedave/React-Gallery-App" target="_blank" class="btn-text">Visit Repository</a>
+                        <a href="https://jimmikedave.github.io/React-Gallery-App/" target="_blank" class="btn-text">Visit Application</a>
+                    </div>
                 </div>
-                <div class="contact" id="contact-info">
-                    <h1>Contact</h1>
-                    <h3>Email: jimmichael.david@gmail.com</h3>
-                    <div class="contact__form-container">
-                        <form action="https://formspree.io/f/xleolaqr" method="POST" id="my-form">
-                            <div class="contact__form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" required>
-                            </div>
-                            
-                            <div class="contact__form-group">
-                                <label for="firstName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" required>
-                            </div>
+            </div>
+        </section>
 
-                            <div class="contact__form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="contact__form-group">
-                                <label for="message">Message</label>
-                                <textarea type="text" id="message" name="message" rows="10" required></textarea>
-                            </div>
-                            
-                            <button type="submit">Submit</button>
-                        </form>
+        <section class="section-contact"  id="contact-info">
+            <div class="row u-center-text">
+                <div class="contact" >
+                    <div class="row">
+                        <h1 class="heading-primary--sub">Contact</h1>
+                        <h3 class="heading-primary--tertiary">Email: jimmichael.david@gmail.com</h3>
+                        <div class="contact__form-container">
+                            <form action="https://formspree.io/f/xleolaqr" method="POST" id="my-form">
+                                <div class="contact__form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                
+                                <div class="contact__form-group">
+                                    <label for="firstName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+        
+                                <div class="contact__form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="contact__form-group">
+                                    <label for="message">Message</label>
+                                    <textarea type="text" id="message" name="message" rows="10" required></textarea>
+                                </div>
+                                
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
                     </div>
                     <div id="status"></div>
-                </div>     
-        </main>
-        <footer>
-            <p class="copyright">Copyright 2020, Jim-Michael David</p>
-        </footer>
-        <script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/app.js"></script>
-    </body>
-</html>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href=#home class="footer__link">Home</a></li>
+                        <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="#my-work" class="footer__link">My Work</a></li>
+                        <li class="footer__item"><a href="#contact-info" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built my portfolio with the help of Jonas Schmedtmann's Advanced CSS course. Copyright &copy; 2020-2021 Jim-Michael David
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="school-course-image">
+        <div class="popup__content">
+            <div class="popup__image-container">
+                <img src="images/school_course.PNG" alt="School Course" class="popup__image">
+            </div>
+            <a href="#school-course" class="popup__close">&times;</a>
+        </div>
+    </div>
+
+    <div class="popup" id="spotify-insight-image">
+        <div class="popup__content">
+            <div class="popup__image-container">
+                <img src="images/Spotify_Insight.PNG" alt="Spotify Insight" class="popup__image">
+            </div>
+            <a href="#spotify-insight" class="popup__close">&times;</a>
+        </div>
+    </div>
+
+    <div class="popup" id="type-for-your-life-image">
+        <div class="popup__content">
+            <div class="popup__image-container">
+                <img src="images/oop_typing.PNG" alt="Type For Your Life" class="popup__image">
+            </div>
+            <a href="#type-for-your-life" class="popup__close">&times;</a>
+        </div>
+    </div>
+
+    <div class="popup" id="jims-image-gallery-image">
+        <div class="popup__content">
+            <div class="popup__image-container">
+                <img src="images/react_flickr.PNG" alt="Spotify Insight" class="popup__image">
+            </div>
+            <a href="#jims-image-gallery" class="popup__close">&times;</a>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html> 

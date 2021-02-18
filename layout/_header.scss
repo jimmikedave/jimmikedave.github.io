@@ -1,18 +1,25 @@
-// Intro
 .header {
-    text-align: center;
-    overflow: hidden;
-    padding-top: 150px;
-    padding-bottom: 285px;
-    background: url('../images/pexels-merry-zar-2306359.jpg') no-repeat center;
-    background-size: cover;
-    color: rgb(19, 23, 42);
+    height: 95vh;
+    position: relative;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 13rem;
 
-    &__title-box {
-        padding-bottom: 310px;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
     }
 
-    &__title-box img:hover {
+    &__text-box img {
+        padding: .5rem;
+    }
+
+    &__text-box img:hover{
         transform: rotate(30deg);
         transition-duration: .4s;
     }
