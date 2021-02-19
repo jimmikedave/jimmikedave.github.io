@@ -4,12 +4,14 @@
     font-size: 1.4rem;
     color: $color-grey-light-1;
     
-
-
     &__navigation {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block; //stops the line at the end of the content 
+
+        @include respond(tab-port) { // width < 900?
+            padding-left: 2rem;
+        }
     }
 
     &__list {
@@ -49,5 +51,9 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+
+        @include respond(tab-port) { // width < 900?
+            padding-right: 2rem;
+        }
     }
 }

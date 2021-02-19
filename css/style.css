@@ -314,6 +314,9 @@ button[type="submit"]:hover {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        padding-left: 5rem; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -337,6 +340,9 @@ button[type="submit"]:hover {
     padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        padding-right: 2rem; } }
 
 .row {
   max-width: 114rem;
