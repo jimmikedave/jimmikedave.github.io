@@ -13,6 +13,8 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 
+Order: Base, typography, general layout, grid, page layout, components
+
 ems are the best options for media queries
 1em = 16px
 */
@@ -82,15 +84,15 @@ ems are the best options for media queries
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -270,6 +272,9 @@ button[type="submit"]:hover {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .project {
+      width: 80%; } }
   .project__shape {
     width: 15rem;
     height: 15rem;
@@ -364,11 +369,18 @@ button[type="submit"]:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .header__text-box {
+        top: 50%; } }
   .header__text-box img {
     padding: .5rem; }
   .header__text-box img:hover {
     transform: rotate(30deg);
     transition-duration: .4s; }
+  @media (max-width: 56.25em) {
+    .header {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .github-animated {
   display: inline-block;
@@ -400,6 +412,9 @@ button[type="submit"]:hover {
     list-style-type: none;
     margin: 0 auto;
     max-width: 1350px; }
+    @media (max-width: 56.25em) {
+      .nav--tabs {
+        max-width: 800px; } }
   .nav--tabs li {
     padding: 5px 10px 10px 10px; }
   .nav--tabs a {
@@ -426,6 +441,13 @@ button[type="submit"]:hover {
   margin-bottom: -20vh;
   margin-left: 3rem;
   margin-right: 3rem; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding-top: 30rem;
+      padding-left: 5rem;
+      margin-top: -32vh;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .section-projects {
   padding: 10rem 0;
@@ -437,12 +459,20 @@ button[type="submit"]:hover {
   margin-right: 3rem; }
   .section-projects__title {
     margin-top: 8rem; }
+  @media (max-width: 56.25em) {
+    .section-projects {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .section-contact {
   background-color: #f7f7f7;
   padding-top: 28.5rem;
   margin-left: 3rem;
   margin-right: 3rem; }
+  @media (max-width: 56.25em) {
+    .section-contact {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .contact {
   margin-top: -25vh; }

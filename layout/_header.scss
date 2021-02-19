@@ -13,6 +13,10 @@
         left: 50%;
         transform: translate(-50%, -50%); 
         text-align: center;
+
+        @include respond(tab-port) { // width < 900?
+            top: 50%;
+        }
     }
 
     &__text-box img {
@@ -22,6 +26,11 @@
     &__text-box img:hover{
         transform: rotate(30deg);
         transition-duration: .4s;
+    }
+
+    @include respond(tab-port) { // width < 900?
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
