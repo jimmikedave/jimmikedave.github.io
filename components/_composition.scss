@@ -10,19 +10,40 @@
         transition: all .2s ease;
         outline-offset: 2rem;
 
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.33333333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+
         &--p1 {
             left: 5%;
             top: 5rem;
+
+            @include respond(tab-port) {
+                top: 5rem;
+                left: 0;
+            }
         }
 
         &--p2 {
             left: 25%;
             top: 15rem;
+
+            @include respond(tab-port) {
+                top: 5rem;
+                left: 10rem;
+            }
         }
 
         &--p3 {
             right: 0;
             top: 2rem;
+
+            @include respond(tab-port) {
+                top: 0;
+            }
         }
 
         &:hover {
@@ -30,11 +51,21 @@
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
+
+            @include respond(tab-port) {
+                outline: transparent;
+                transform: scale(1) translateY(0);
+                box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+            }
         }
         
     }
     //.composition:hover composition__photo:not(:hover){}
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
+
+        @include respond(tab-port) {
+            transform: scale(1);
+        }
     }
 }
