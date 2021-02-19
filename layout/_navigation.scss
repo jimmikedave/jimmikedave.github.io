@@ -2,7 +2,7 @@
     width: 100%;
     background: $color-primary-dark-2;
     font-size: $default-font-size;
-    height: 65px;
+    height: 6.5rem;
     padding: 1rem;
     position: fixed;
     z-index: 100;
@@ -13,11 +13,7 @@
         font-weight: 700; 
         list-style-type: none; 
         margin: 0 auto;
-        max-width: 1350px;
-
-        @include respond(tab-port) { // width < 900?
-            max-width: 800px;
-        }
+        max-width: 135rem;
     }
     
     &--tabs li {

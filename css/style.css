@@ -409,7 +409,7 @@ button[type="submit"]:hover {
   width: 100%;
   background: #142946;
   font-size: 1.6rem;
-  height: 65px;
+  height: 6.5rem;
   padding: 1rem;
   position: fixed;
   z-index: 100; }
@@ -419,10 +419,7 @@ button[type="submit"]:hover {
     font-weight: 700;
     list-style-type: none;
     margin: 0 auto;
-    max-width: 1350px; }
-    @media (max-width: 56.25em) {
-      .nav--tabs {
-        max-width: 800px; } }
+    max-width: 135rem; }
   .nav--tabs li {
     padding: 5px 10px 10px 10px; }
   .nav--tabs a {
