@@ -1,3 +1,21 @@
+/*
+0 - 600px: Phone
+600px-900px: Tablet portrait
+900px-1200px: Tablet landscape
+1200px-1800px: Normal styles apply
+1800px+: Big desktop
+
+@content allows us to pass a block of code into a mixin
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ems are the best options for media queries
+1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -64,6 +82,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 70%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
 
 body {
   box-sizing: border-box; }
