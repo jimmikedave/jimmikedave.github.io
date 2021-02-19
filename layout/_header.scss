@@ -14,8 +14,8 @@
         transform: translate(-50%, -50%); 
         text-align: center;
 
-        @include respond(tab-port) { // width < 900?
-            top: 50%;
+        @include respond(phone) { // width < 600
+            top: 45%;
         }
     }
 

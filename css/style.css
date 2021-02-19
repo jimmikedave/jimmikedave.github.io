@@ -107,18 +107,17 @@ body {
   display: block;
   font-size: 6rem;
   font-weight: 600;
-  letter-spacing: .5rem;
   animation: moveInLeft 1s ease-out; }
 
 .heading-primary--sub {
   display: block;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 400;
   animation: moveInRight 1s ease-out; }
 
 .heading-primary--tertiary {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   animation: moveInLeft 1s ease-out; }
 
@@ -201,22 +200,47 @@ button[type="submit"]:hover {
     z-index: 10;
     transition: all .2s ease;
     outline-offset: 2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333333333%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
       left: 5%;
       top: 5rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 5rem;
+          left: 0; } }
     .composition__photo--p2 {
       left: 25%;
       top: 15rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: 5rem;
+          left: 10rem; } }
     .composition__photo--p3 {
       right: 0;
       top: 2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 0; } }
     .composition__photo:hover {
       outline: 1.5rem solid #f3a30d;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
+      @media (max-width: 56.25em) {
+        .composition__photo:hover {
+          outline: transparent;
+          transform: scale(1) translateY(0);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+    @media (max-width: 56.25em) {
+      .composition:hover .composition__photo:not(:hover) {
+        transform: scale(1); } }
 
 .popup {
   height: 100vh;
@@ -310,13 +334,18 @@ button[type="submit"]:hover {
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
     @media (max-width: 56.25em) {
       .footer__navigation {
-        padding-left: 5rem; } }
+        width: 100%;
+        text-align: center;
+        border-top: transparent; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -342,7 +371,10 @@ button[type="submit"]:hover {
     float: right; }
     @media (max-width: 56.25em) {
       .footer__copyright {
-        padding-right: 2rem; } }
+        width: 100%;
+        text-align: center;
+        float: none;
+        border-top: transparent; } }
 
 .row {
   max-width: 114rem;
@@ -357,6 +389,9 @@ button[type="submit"]:hover {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -383,9 +418,9 @@ button[type="submit"]:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 37.5em) {
       .header__text-box {
-        top: 50%; } }
+        top: 45%; } }
   .header__text-box img {
     padding: .5rem; }
   .header__text-box img:hover {
