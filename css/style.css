@@ -275,6 +275,9 @@ button[type="submit"]:hover {
   @media (max-width: 56.25em) {
     .project {
       width: 80%; } }
+  @media (max-width: 37.5em) {
+    .project {
+      transform: skewX(0); } }
   .project__shape {
     width: 15rem;
     height: 15rem;
@@ -284,6 +287,11 @@ button[type="submit"]:hover {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .project__shape {
+        transform: skewX(0);
+        margin-right: 2rem;
+        margin-left: -2rem; } }
   .project__image {
     height: 100%;
     transition: all .3s;

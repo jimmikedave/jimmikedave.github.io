@@ -13,6 +13,10 @@
         width: 80%;
     }
 
+    @include respond(phone) { // width < 600?
+        transform: skewX(0)
+    }
+
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -23,6 +27,12 @@
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+
+        @include respond(phone) { // width < 600?
+            transform: skewX(0);
+            margin-right: 2rem;
+            margin-left: -2rem;
+        }
     }
 
     &__image {
